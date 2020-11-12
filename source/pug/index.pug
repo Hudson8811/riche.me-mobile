@@ -1,0 +1,169 @@
+extends templates/main.pug
+block variables
+	- let pageTitle = 'Кофейный скраб для тела CHOCOLATE + COCOA BUTTER';
+	- let isHome = true;
+
+block content
+	article.product
+		header.product__header
+			a.product__header-back(href="#") Тело
+			span.product__type Скраб
+			h1.product__heading Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+		.product__images
+			.product__image
+				img(src="img/product/1.jpg", srcset="img/product/1@2x.jpg 2x", width="240", height="320", alt="")
+			.product__image
+				img(src="img/product/2.jpg", srcset="img/product/2@2x.jpg 2x", width="320", height="320", alt="")
+		.product__buy
+			.product__buy-inner
+				.product__buy-main
+					.product__discount Скидка 50%
+					.product__price
+						.product__price-val 935 ₽
+						.product__price-val.product__price-val--old 1 190 ₽
+				a.product__buy-btn.btn.btn--icon-cart(href="#")
+					| Добавить
+		section.product__main
+			.product__main-inner
+				h2 Описание
+				.product__main-text Как насчет чашечки зеленого чая? Этот гель для умывания на его основе идеально подойдет жирной и комбинированной коже. Средство не только мягко и эффективно очищает, но и нормализует pH-баланс, а также матирует кожу и избавляет от жирного блеска.
+				.product__main-return
+					img(src="img/return.png", srcset="img/return@2x.png", width="107", height="108", alt="Возврат без чека в течение 60 дней")
+
+				.product__video
+					video(poster="img/poster.jpg")
+				.product__days
+					.product__days-item
+						.product__days-item-text 1-й день
+						img(src="img/product/1-day.jpg", srcset="img/product/1-day@2x.jpg 2x", width="155", height="230", alt="")
+					.product__days-item
+						.product__days-item-text 31-й день
+						img(src="img/product/1-day.jpg", srcset="img/product/1-day@2x.jpg 2x", width="155", height="230", alt="")
+					.product__days-text 31 день антицеллюлитного комплекса
+
+
+		section.product__reviews.reviews
+			.reviews__inner
+				header.reviews__header
+					.reviews__rating 4.9
+					.reviews__header-wrap
+						.reviews__stars
+							- let i = 0;
+							while i < 4
+								svg(width="12", height="11", viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg")
+									path(d="M11.448 4.157a.609.609 0 00-.525-.42l-3.313-.3L6.3.37a.61.61 0 00-1.122 0l-1.31 3.066-3.313.301a.61.61 0 00-.347 1.068L2.713 7l-.739 3.253a.61.61 0 00.907.659L5.74 9.205l2.857 1.708a.61.61 0 00.908-.659L8.765 7l2.505-2.196a.61.61 0 00.178-.648z", fill="#4C9935")
+								- i++;
+							svg(width="12", height="11", viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg")
+								defs
+									linearGradient#half_5
+										stop(offset="50%", stop-color="#4c9935")
+										stop(offset="50%", stop-color="#c9c9c9", stop-opacity="1")
+								path(d="M11.448 4.157a.609.609 0 00-.525-.42l-3.313-.3L6.3.37a.61.61 0 00-1.122 0l-1.31 3.066-3.313.301a.61.61 0 00-.347 1.068L2.713 7l-.739 3.253a.61.61 0 00.907.659L5.74 9.205l2.857 1.708a.61.61 0 00.908-.659L8.765 7l2.505-2.196a.61.61 0 00.178-.648z", fill="url(#half_5)")
+						.reviews__count 14 отзывов
+				.reviews__buttons
+					a.reviews__btn.btn.btn--outline(href="#") Оставить отзыв
+					a.reviews__btn.btn.btn--outline(href="#") Задать вопрос
+				.reviews__tabs
+					.reviews__tabs-nav
+						a.reviews__tabs-nav-item.active(href="#tab-reviews") Отзывы <span>(14)</span>
+						a.reviews__tabs-nav-item(href="#tab-question") Вопрос <span>(5)</span>
+					.reviews__tabs-body
+						.reviews__tabs-body-item.active#tab-reviews
+							include modules/reviews-slider
+							//-.reviews__contrls
+								button.prev(type="button") prev ..
+								button.next(type="button") next ..
+								.dotsClass
+						.reviews__tabs-body-item#tab-question
+							| Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ex rerum quia culpa quo a nulla saepe quod perspiciatis et ea, deleniti optio architecto accusamus ab ad totam repellat dignissimos.
+
+		.product__accordion.accordion
+			.accordion__inner
+				.accordion__item
+					button.accordion__item-btn(type="button") О продукте
+					.accordion__item-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas fugit facere atque optio recusandae, omnis reiciendis laborum neque doloribus animi adipisci sequi rerum et! Dolorem iure explicabo corporis illo minus.
+				.accordion__item
+					button.accordion__item-btn(type="button") Как использовать
+					.accordion__item-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas fugit facere atque optio recusandae, omnis reiciendis laborum neque doloribus animi adipisci sequi rerum et! Dolorem iure explicabo corporis illo minus.
+				.accordion__item
+					button.accordion__item-btn(type="button") Состав
+					.accordion__item-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas fugit facere atque optio recusandae, omnis reiciendis laborum neque doloribus animi adipisci sequi rerum et! Dolorem iure explicabo corporis illo minus.
+
+	section.products-section
+		.products-section__inner
+			h2.products-section__heading.products-section__heading--icon-heart Наши покупатели выбирают
+			ul.products-section__list
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/popular-1.jpg", srcset="img/product/popular-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/popular-1.jpg", srcset="img/product/popular-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/popular-1.jpg", srcset="img/product/popular-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/popular-1.jpg", srcset="img/product/popular-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+
+	section.products-section
+		.products-section__inner
+			h2.products-section__heading.products-section__heading--icon-recomend Рекомендуем
+			ul.products-section__list
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/recommend-1.jpg", srcset="img/product/recommend-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+
+	section.products-section
+		.products-section__inner
+			h2.products-section__heading.products-section__heading--icon-star Вы смотрели
+			ul.products-section__list
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/viewed-1.jpg", srcset="img/product/viewed-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+
+	section.catalog-sections
+		.catalog-sections__inner
+			a.catalog-sections__item.catalog-sections__item--bg-face(href="#") Лицо
+			a.catalog-sections__item.catalog-sections__item--bg-body(href="#") Тело
+			a.catalog-sections__item.catalog-sections__item--bg-hair(href="#") Волосы
+
+
+block footer
+	include modules/footer.pug

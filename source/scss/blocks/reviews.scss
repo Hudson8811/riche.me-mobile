@@ -1,0 +1,109 @@
+.reviews {
+	background-color: #ffffff;
+
+	&__inner {
+		max-width: 360px;
+		margin: 0 auto;
+		padding: 30px 15px;
+	}
+
+	&__header {
+		display: flex;
+		margin-bottom: 25px;
+
+		&-wrap {
+			align-self: center;
+		}
+	}
+
+	&__rating {
+		margin-right: 16px;
+
+		@include text(46px, 1.21);
+		font-weight: 700;
+	}
+
+	&__stars {
+		margin-bottom: 6px;
+	}
+
+	&__count {
+		@include text(14px, 1.21);
+	}
+
+	&__buttons {
+		display: flex;
+		margin-bottom: 40px;
+	}
+
+	&__btn + &__btn {
+		margin-left: 8px;
+	}
+
+	&__tabs {
+		&-nav {
+			display: flex;
+			margin-bottom: 30px;
+			padding: 10px 0;
+			border-bottom: solid 1px #c9c9c9;
+
+			&-item {
+				position: relative;
+				@include text(18px, 1.16);
+				text-decoration: none;
+
+				& + * {
+					margin-left: 56px;
+				}
+
+				&.active {
+					font-weight: 700;
+
+					&::before {
+						content: "";
+						position: absolute;
+						bottom: -12px;
+						left: 0;
+						width: 100%;
+						height: 4px;
+						background-color: #4c9935;
+					}
+				}
+			}
+		}
+
+		&-body {
+			&-item {
+				display: none;
+
+				&.active {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.slick-dots {
+		@include list-reset;
+		display: flex;
+		justify-content: center;
+		margin-top: 32px;
+
+		li {
+			button {
+				padding: 0 8px;
+
+				@include text(16px, 1.25, #909090);
+				border: none;
+				background-color: transparent;
+			}
+
+			&.slick-active {
+				button {
+					color: #4c9935;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

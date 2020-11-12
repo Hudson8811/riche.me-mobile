@@ -1,0 +1,53 @@
+.products-section {
+	background-color: #f9f9f9;
+	overflow: hidden;
+
+	&__inner {
+		max-width: 360px;
+		margin: 0 auto;
+		padding: 40px 15px;
+	}
+
+	&__heading {
+		margin: 0 0 24px;
+		padding-left: 35px;
+
+		@include text(26px, 32px);
+
+		&--icon-heart {
+			background-position: 0 8px;
+			background-repeat: no-repeat;
+			background-size: 17px 15px;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.3322 0C13.7241 0 15.6634 1.93933 15.6634 4.3308C15.6634 8.28367 7.83152 13.5338 7.83152 13.5338C7.83152 13.5338 0 8.47291 0 4.33077C0 1.35329 1.93933 0 4.3308 0C5.77137 0 7.04387 0.706469 7.83152 1.78812C8.61928 0.706469 9.892 0 11.3322 0Z' fill='%234C9935'/%3e%3c/svg%3e ");
+		}
+		&--icon-recomend {
+			background-position: 0 8px;
+			background-repeat: no-repeat;
+			background-size: 19px 16px;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg  viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.326 0H5.674A5.68 5.68 0 000 5.674a5.68 5.68 0 005.674 5.674h2.712v3.022a.659.659 0 001.126.468l3.514-3.49h.3A5.68 5.68 0 0019 5.674 5.68 5.68 0 0013.326 0zM4.654 4.146c0-1.176.957-2.133 2.133-2.133 1.176 0 2.133.957 2.133 2.133a.64.64 0 01-1.28 0 .854.854 0 00-1.706 0 .64.64 0 01-1.28 0zm8.818 2.833a4.532 4.532 0 01-3.965 2.377 4.536 4.536 0 01-3.979-2.377.64.64 0 111.128-.606 3.248 3.248 0 003.02 1.698 3.244 3.244 0 002.668-1.698.64.64 0 111.128.606zm.234-2.193a.64.64 0 01-.64-.64.854.854 0 00-1.706 0 .64.64 0 01-1.28 0c0-1.176.957-2.133 2.133-2.133 1.176 0 2.133.957 2.133 2.133a.64.64 0 01-.64.64z' fill='%234C9935'/%3e%3c/svg%3e");
+		}
+
+		&--icon-star {
+			background-position: 0 4px;
+			background-repeat: no-repeat;
+			background-size: 21px 21px;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 12 11' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill='%234C9935' d='M11.448 4.157a.609.609 0 00-.525-.42l-3.313-.3L6.3.37a.61.61 0 00-1.122 0l-1.31 3.066-3.313.301a.61.61 0 00-.347 1.068L2.713 7l-.739 3.253a.61.61 0 00.907.659L5.74 9.205l2.857 1.708a.61.61 0 00.908-.659L8.765 7l2.505-2.196a.61.61 0 00.178-.648z'/%3e%3c/svg%3e ");
+		}
+	}
+
+	&__list {
+		@include list-reset;
+		display: flex;
+		width: calc(100% + 15px);
+		overflow: auto;
+	}
+
+	&__item {
+		width: 170px;
+		flex-shrink: 0;
+	}
+
+	&__item + &__item {
+		margin-left: 30px;
+	}
+}

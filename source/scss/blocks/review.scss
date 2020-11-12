@@ -1,0 +1,39 @@
+.review {
+	& + .review {
+		margin-top: 30px;
+	}
+
+	&__header {
+		display: flex;
+		margin-bottom: 16px;
+
+		&-wrap {
+			align-self: center;
+		}
+	}
+
+	&__avatar {
+		margin-right: 16px;
+	}
+
+	&__date {
+		display: block;
+		margin-bottom: 8px;
+
+		@include text(12px, 14px);
+	}
+
+	&__author {
+		margin-bottom: -3px;
+
+		@include text(16px, 20px);
+		font-weight: 700;
+	}
+
+	&__rating {
+		svg {
+		}
+	}
+	&__text {
+	}
+}

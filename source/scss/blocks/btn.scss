@@ -1,0 +1,80 @@
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 145px;
+	padding: 14px 8px 11px;
+
+	@include text(16px, 1.25, #ffffff);
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	border-radius: 3px;
+	background-color: #4c9935;
+	transition: none;
+
+	&--icon-cart {
+		position: relative;
+		padding-left: 42px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 16px;
+			transform: translateY(-50%);
+			width: 18px;
+			height: 20px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.66 6.273a.647.647 0 00-.467.2.697.697 0 00-.193.483v9.227c0 1.292 1.061 2.393 2.307 2.393H14.51c1.246 0 2.307-1.047 2.307-2.34v-9.28a.697.697 0 00-.193-.483.647.647 0 00-.466-.2H1.66zM5.394 6.273V4.955A3.955 3.955 0 019.348 1v0a3.955 3.955 0 013.955 3.955v1.318' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+		}
+	}
+
+	&--outline {
+		min-width: 140px;
+		font-size: 13px;
+		color: #000000;
+		border: solid 1px #4c9935;
+		background-color: #ffffff;
+
+		&:hover,
+		&:focus {
+			outline: none;
+			color: #ffffff;
+			background-color: #4c9935;
+		}
+	}
+
+	&--outline-with-icon {
+		position: relative;
+		min-width: 145px;
+		padding-left: 42px;
+		color: #000000;
+		border: solid 1px #4c9935;
+		background-color: transparent;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 16px;
+			transform: translateY(-50%);
+			width: 18px;
+			height: 20px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.66 6.273a.647.647 0 00-.467.2.697.697 0 00-.193.483v9.227c0 1.292 1.061 2.393 2.307 2.393H14.51c1.246 0 2.307-1.047 2.307-2.34v-9.28a.697.697 0 00-.193-.483.647.647 0 00-.466-.2H1.66zM5.394 6.273V4.955A3.955 3.955 0 019.348 1v0a3.955 3.955 0 013.955 3.955v1.318' stroke='%234c9935' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+		}
+
+		&:hover,
+		&:focus {
+			outline: none;
+			color: #ffffff;
+			background-color: #4c9935;
+
+			&::before {
+				background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.66 6.273a.647.647 0 00-.467.2.697.697 0 00-.193.483v9.227c0 1.292 1.061 2.393 2.307 2.393H14.51c1.246 0 2.307-1.047 2.307-2.34v-9.28a.697.697 0 00-.193-.483.647.647 0 00-.466-.2H1.66zM5.394 6.273V4.955A3.955 3.955 0 019.348 1v0a3.955 3.955 0 013.955 3.955v1.318' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+			}
+		}
+	}
+}

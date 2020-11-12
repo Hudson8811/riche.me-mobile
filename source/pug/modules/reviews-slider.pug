@@ -1,0 +1,46 @@
+.reviews__slider
+	- let z = 0;
+	while z < 3
+		.reviews__slider-item
+			.review
+				.review__header
+					.review__avatar
+						img(src="img/review-avatar-1.jpg", srcset="review-avatar-1@2x.jpg 2x", width="77", height="67", alt="")
+					.review__header-wrap
+						time.review__date(datetime="2020-10-05") 05.10.2020
+						.review__author Азали
+						.review__rating
+							- i = 0;
+							while i < 5
+								svg(width="8", height="8", viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg")
+									path(d="M11.448 4.157a.609.609 0 00-.525-.42l-3.313-.3L6.3.37a.61.61 0 00-1.122 0l-1.31 3.066-3.313.301a.61.61 0 00-.347 1.068L2.713 7l-.739 3.253a.61.61 0 00.907.659L5.74 9.205l2.857 1.708a.61.61 0 00.908-.659L8.765 7l2.505-2.196a.61.61 0 00.178-.648z", fill="#4C9935")
+								- i++;
+				.review__text Как насчет чашечки зеленого чая? Этот гель для умывания на его основе идеально подойдет жирной и комбинированной коже. Средство не только мягко и эффективно очищает.
+			.review
+				.review__header
+					.review__header-wrap
+						time.review__date(datetime="2020-10-05") 05.10.2020
+						.review__author Дарья
+						.review__rating
+							- i = 0;
+							while i < 5
+								svg(width="8", height="8", viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg")
+									path(d="M11.448 4.157a.609.609 0 00-.525-.42l-3.313-.3L6.3.37a.61.61 0 00-1.122 0l-1.31 3.066-3.313.301a.61.61 0 00-.347 1.068L2.713 7l-.739 3.253a.61.61 0 00.907.659L5.74 9.205l2.857 1.708a.61.61 0 00.908-.659L8.765 7l2.505-2.196a.61.61 0 00.178-.648z", fill="#4C9935")
+								- i++;
+				.review__text Как насчет чашечки зеленого чая? Этот гель для умывания на его основе идеально подойдет жирной и комбинированной коже. Средство не только мягко и эффективно ..
+			.review
+				.review__header
+					.review__avatar
+						img(src="img/review-avatar-3.jpg", srcset="review-avatar-3@2x.jpg 2x", width="77", height="67", alt="")
+					.review__header-wrap
+						time.review__date(datetime="2020-10-05") 05.10.2020
+						.review__author Анастасия
+						.review__rating
+							- i = 0;
+							while i < 5
+								svg(width="8", height="8", viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg")
+									path(d="M11.448 4.157a.609.609 0 00-.525-.42l-3.313-.3L6.3.37a.61.61 0 00-1.122 0l-1.31 3.066-3.313.301a.61.61 0 00-.347 1.068L2.713 7l-.739 3.253a.61.61 0 00.907.659L5.74 9.205l2.857 1.708a.61.61 0 00.908-.659L8.765 7l2.505-2.196a.61.61 0 00.178-.648z", fill="#4C9935")
+								- i++;
+				.review__text Как насчет чашечки зеленого чая? Этот гель для умывания на его основе идеально подойдет жирной и комбинированной коже.
+
+		- z++;
