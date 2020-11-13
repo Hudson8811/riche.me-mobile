@@ -4,12 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" />
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" />
-  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" />
-  <link rel="preload" href="fonts/Montserrat-Semibold.woff2" as="font" />
-  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" />
-  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" />
+  <link rel="preload" href="https://riche.me/local/templates/riche/proximanova/proximanova-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="https://riche.me/local/templates/riche/proximanova/proximanova-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="https://riche.me/local/templates/riche/proximanova/proximanova-light-italic.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/mobile.min.css">
   <title>Кофейный скраб для тела CHOCOLATE + COCOA BUTTER</title>
@@ -6527,17 +6524,17 @@
 <body class="webpage">
   <div style="display: none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <symbol id="icon-star" viewBox="0 0 12 11">
-        <path d="M11.448 4.157a.609.609 0 00-.525-.42l-3.313-.3L6.3.37a.61.61 0 00-1.122 0l-1.31 3.066-3.313.301a.61.61 0 00-.347 1.068L2.713 7l-.739 3.253a.61.61 0 00.907.659L5.74 9.205l2.857 1.708a.61.61 0 00.908-.659L8.765 7l2.505-2.196a.61.61 0 00.178-.648z" />
+      <symbol id="icon-back" viewBox="0 0 14 10">
+        <path d="M14 5H2m0 0l4.143-4M2 5l4.143 4" stroke="#000" stroke-width="1.5" />
       </symbol>
       <symbol id="icon-cart" viewBox="0 0 18 20">
         <path d="M1.66 6.273a.647.647 0 00-.467.2.697.697 0 00-.193.483v9.227c0 1.292 1.061 2.393 2.307 2.393H14.51c1.246 0 2.307-1.047 2.307-2.34v-9.28a.697.697 0 00-.193-.483.647.647 0 00-.466-.2H1.66zm3.734 0V4.955A3.955 3.955 0 019.348 1v0a3.955 3.955 0 013.955 3.955v1.318" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
       </symbol>
-      <symbol id="icon-back" viewBox="0 0 14 10">
-        <path d="M14 5H2m0 0l4.143-4M2 5l4.143 4" stroke="#000" stroke-width="1.5" />
-      </symbol>
       <symbol id="icon-dropdown" viewBox="0 0 19 11">
         <path d="M1 1l8.4 8 8.4-8" stroke="#000" stroke-width="2" />
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 12 11">
+        <path d="M11.448 4.157a.609.609 0 00-.525-.42l-3.313-.3L6.3.37a.61.61 0 00-1.122 0l-1.31 3.066-3.313.301a.61.61 0 00-.347 1.068L2.713 7l-.739 3.253a.61.61 0 00.907.659L5.74 9.205l2.857 1.708a.61.61 0 00.908-.659L8.765 7l2.505-2.196a.61.61 0 00.178-.648z" />
       </symbol>
     </svg>
   </div>
@@ -6723,13 +6720,37 @@
             <video poster="img/poster.jpg"></video>
           </div>
           <div class="product__days">
-            <div class="product__days-item">
-              <div class="product__days-item-text">1-й день</div>
-              <img src="img/product/1-day.jpg" srcset="img/product/1-day@2x.jpg 2x" width="155" height="230" alt="">
-            </div>
-            <div class="product__days-item">
-              <div class="product__days-item-text">31-й день</div>
-              <img src="img/product/1-day.jpg" srcset="img/product/1-day@2x.jpg 2x" width="155" height="230" alt="">
+            <div class="product__days-slider">
+              <div class="product__days-slider-item">
+                <div class="product__days-item">
+                  <div class="product__days-item-text">1-й день</div>
+                  <img src="img/product/1-day.jpg" srcset="img/product/1-day@2x.jpg 2x" width="155" height="230" alt="">
+                </div>
+                <div class="product__days-item">
+                  <div class="product__days-item-text">31-й день</div>
+                  <img src="img/product/31-day.jpg" srcset="img/product/31-day@2x.jpg 2x" width="155" height="230" alt="">
+                </div>
+              </div>
+              <div class="product__days-slider-item">
+                <div class="product__days-item">
+                  <div class="product__days-item-text">1-й день</div>
+                  <img src="img/product/1-day.jpg" srcset="img/product/1-day@2x.jpg 2x" width="155" height="230" alt="">
+                </div>
+                <div class="product__days-item">
+                  <div class="product__days-item-text">31-й день</div>
+                  <img src="img/product/31-day.jpg" srcset="img/product/31-day@2x.jpg 2x" width="155" height="230" alt="">
+                </div>
+              </div>
+              <div class="product__days-slider-item">
+                <div class="product__days-item">
+                  <div class="product__days-item-text">1-й день</div>
+                  <img src="img/product/1-day.jpg" srcset="img/product/1-day@2x.jpg 2x" width="155" height="230" alt="">
+                </div>
+                <div class="product__days-item">
+                  <div class="product__days-item-text">31-й день</div>
+                  <img src="img/product/31-day.jpg" srcset="img/product/31-day@2x.jpg 2x" width="155" height="230" alt="">
+                </div>
+              </div>
             </div>
             <div class="product__days-text">31 день антицеллюлитного комплекса</div>
           </div>
@@ -7232,7 +7253,132 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer id="footer-new" class="wrap">
+    <div class="grid">
+      <div id="footer-about" class="one-third unit footer-about">
+        <div id="comp_8d2a89cb0332a0957cdc7c960ee6d5fb">
+          <div id="form-mini">
+            <div id="form-mini-result-new" class="form-wrapper" data-sid="RICHE_FAMILY" data-id="12">
+              <form name="RICHE_FAMILY" action="/" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="bxajaxid" id="bxajaxid_8d2a89cb0332a0957cdc7c960ee6d5fb_8BACKi" value="8d2a89cb0332a0957cdc7c960ee6d5fb">
+                <input type="hidden" name="AJAX_CALL" value="Y">
+                <script type="text/javascript">function _processform_8BACKi(){	if (BX('bxajaxid_8d2a89cb0332a0957cdc7c960ee6d5fb_8BACKi')){var obForm = BX('bxajaxid_8d2a89cb0332a0957cdc7c960ee6d5fb_8BACKi').form;BX.bind(obForm, 'submit', function() {BX.ajax.submitComponentForm(this, 'comp_8d2a89cb0332a0957cdc7c960ee6d5fb', true)});}BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);}if (BX('bxajaxid_8d2a89cb0332a0957cdc7c960ee6d5fb_8BACKi'))	_processform_8BACKi();else	BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
+</script>
+                <input type="hidden" name="sessid" id="sessid" value="1f167afbba086d9aca809b64d888f993">
+                <input type="hidden" name="WEB_FORM_ID" value="12">
+                <div class="form-description description">Узнавай первой о новинках и специальных акциях! </div>
+                <div class="fields">
+                  <div class="field required                            email                            email">
+                    <input type="email" placeholder="Ваш e-mail" name="form_email_30" value="" size="16">
+                  </div>
+                  <input type="hidden" name="form_hidden_39" value="">
+                  <div class="actions">
+                    <input class="button wide" type="submit" name="web_form_submit" value="Хочу">
+                  </div>
+                </div>
+                <div class="field agreement checkbox">
+                  <input type="checkbox" checked="checked" name="DATA_PROCESS" id="popup-form-default-data-process" readonly="">
+                  <label for="popup-form-default-new-data-process" class="description">Согласие с <a href="/about/privacy-policy/" target="_blank">обработкой персональныхданных</a>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a href="/about/privacy-policy/" class="footer__privacy-policy">Политика конфедециальности</a>
+      </div>
+      <div id="footer-menu" class="one-third unit">
+        <nav id="footer-menu">
+          <ul class="menu">
+            <li class="root item">
+              <a href="/about/payment">Оплата</a>
+            </li>
+            <li class="root item">
+              <a href="https://account.admitad.com/ru/webmaster/offers/22035-riche-ru/">CPA программа</a>
+            </li>
+            <li class="root item">
+              <a href="/delivery">Доставка</a>
+            </li>
+            <li class="root item">
+              <a href="/help/">Помощь</a>
+            </li>
+            <li class="root item">
+              <a href="/reviews/">Отзывы</a>
+            </li>
+            <li class="root item">
+              <a href="/promo/">О нас</a>
+            </li>
+            <li class="root item">
+              <a href="/hh/">Вакансии</a>
+            </li>
+            <li class="root item">
+              <a href="/about/shop/">Где купить</a>
+            </li>
+            <li class="root item">
+              <a href="http://shop.riche.me/">Стать партнёром</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="footer-contacts" class="one-third unit footer-contacts">
+        <p>
+          <a href="tel:88003020387">8 800 302-03-87</a>
+        </p>
+        <div class="footer__contacts-email-wrapper">
+          <a href="mailto:info@riche.me" class="footer__contacts-email">info@riche.me</a>
+        </div>
+        <p class="small">Время работы с 9<sup>00</sup>&nbsp;до 21<sup>00</sup>
+          <br> в&nbsp;выходные с 11<sup>00</sup> до 20<sup>00</sup>
+        </p>
+        <div class="links center-on-mobiles">
+          <a href="https://www.youtube.com/channel/UCvfaWiXugst22LddZMeiyDA" rel="noopener" title="Наш канал в YouTube">
+            <img class=" lazyloaded" data-src="/res/footer/youtube.svg" src="/res/footer/youtube.svg">
+          </a>
+          <a id="ig" href="https://www.instagram.com/riche.cosmetics/" rel="noopener" title="Наш канал в Instagram">
+            <img class=" lazyloaded" data-src="/res/footer/instagram.svg" src="/res/footer/instagram.svg">
+          </a>
+          <a href="https://www.tiktok.com/@riche.me?source=h5_t" rel="noopener" title="Наш канал на Тиктоке">
+            <img class="footer__link-tiktok lazyloaded" data-src="/res/footer/tiktok.svg" src="/res/footer/tiktok.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="grid" id="footer-mobile-apps">
+      <div class="whole unit">
+        <ul>
+          <li>
+            <a href="https://apps.apple.com/ru/app/riche-cosmetics/id1466080004">
+              <img src="/res/appstore.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=ru.napoleonit.riche&amp;hl=ru">
+              <img src="/res/googleplay.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid center-on-mobiles" id="footer-last-panel">
+      <div class="half unit">
+        <a class="center-on-mobiles homepage" href="/" id="footer-site-name">
+          <img class=" lazyloaded" src="/local/templates/riche/logotype.svg" alt="RICHE COSMETICS">
+        </a>
+      </div>
+      <div class="half unit footer__inn-kpp">
+        <span class="footer__inn">ИНН 2130160270</span>
+        <span>КПП 213001001</span>
+      </div>
+      <div class="half unit copy">
+        <p id="footer-outro">
+          <span>© RICHE 2015 - 2020 гг
+            <span class="span icon"></span>
+            <span class="uppercase">With all our love</span>
+          </span>
+        </p>
+      </div>
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/inline.js"></script>

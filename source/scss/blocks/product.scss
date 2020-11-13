@@ -178,9 +178,38 @@
 	}
 
 	&__days {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		&-slider {
+			position: relative;
+
+			&-item {
+				display: flex !important;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			.slick-arrow {
+				position: absolute;
+				top: 50%;
+				z-index: 101;
+				transform: translateY(5px);
+				width: 24px;
+				height: 24px;
+
+				font-size: 0;
+				background-color: transparent;
+				border: none;
+				background-size: auto 100%;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.667 12.6L7 7 1.667 1.4' stroke='%23eee' stroke-width='2'/%3e%3c/svg%3e");
+			}
+			.slick-prev {
+				left: 8px;
+				transform: translateY(5px) scale(-1, 1);
+			}
+			.slick-next {
+				right: 8px;
+			}
+		}
 
 		&-item {
 			width: calc(50% - 5px);

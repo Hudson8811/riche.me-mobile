@@ -1924,31 +1924,56 @@ img {
     width: calc(100% + 30px);
     margin-left: -15px; }
 
-.product__days {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .product__days-item {
-    width: calc(50% - 5px); }
-    .product__days-item-text {
-      margin-bottom: 10px;
-      font-size: 16px;
-      line-height: 1.25;
-      color: #000000; }
-    .product__days-item img {
-      display: block;
-      width: 100%;
-      height: auto; }
-  .product__days-text {
-    width: 100%;
-    margin-top: 15px;
+.product__days-slider {
+  position: relative; }
+  .product__days-slider-item {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .product__days-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 101;
+    -ms-transform: translateY(5px);
+        transform: translateY(5px);
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.667 12.6L7 7 1.667 1.4' stroke='%23eee' stroke-width='2'/%3e%3c/svg%3e"); }
+  .product__days-slider .slick-prev {
+    left: 8px;
+    -ms-transform: translateY(5px) scale(-1, 1);
+        transform: translateY(5px) scale(-1, 1); }
+  .product__days-slider .slick-next {
+    right: 8px; }
+
+.product__days-item {
+  width: calc(50% - 5px); }
+  .product__days-item-text {
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.25;
-    color: #000000;
-    text-align: center; }
+    color: #000000; }
+  .product__days-item img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.product__days-text {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+  text-align: center; }
 
 .product__reviews {
   margin-bottom: 20px; }

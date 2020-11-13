@@ -33,12 +33,31 @@ block content
 				.product__video
 					video(poster="img/poster.jpg")
 				.product__days
-					.product__days-item
-						.product__days-item-text 1-й день
-						img(src="img/product/1-day.jpg", srcset="img/product/1-day@2x.jpg 2x", width="155", height="230", alt="")
-					.product__days-item
-						.product__days-item-text 31-й день
-						img(src="img/product/1-day.jpg", srcset="img/product/1-day@2x.jpg 2x", width="155", height="230", alt="")
+					.product__days-slider
+						.product__days-slider-item
+							.product__days-item
+								.product__days-item-text 1-й день
+								img(src="img/product/1-day.jpg", srcset="img/product/1-day@2x.jpg 2x", width="155", height="230", alt="")
+							.product__days-item
+								.product__days-item-text 31-й день
+								img(src="img/product/31-day.jpg", srcset="img/product/31-day@2x.jpg 2x", width="155", height="230", alt="")
+
+						.product__days-slider-item
+							.product__days-item
+								.product__days-item-text 1-й день
+								img(src="img/product/1-day.jpg", srcset="img/product/1-day@2x.jpg 2x", width="155", height="230", alt="")
+							.product__days-item
+								.product__days-item-text 31-й день
+								img(src="img/product/31-day.jpg", srcset="img/product/31-day@2x.jpg 2x", width="155", height="230", alt="")
+
+						.product__days-slider-item
+							.product__days-item
+								.product__days-item-text 1-й день
+								img(src="img/product/1-day.jpg", srcset="img/product/1-day@2x.jpg 2x", width="155", height="230", alt="")
+							.product__days-item
+								.product__days-item-text 31-й день
+								img(src="img/product/31-day.jpg", srcset="img/product/31-day@2x.jpg 2x", width="155", height="230", alt="")
+
 					.product__days-text 31 день антицеллюлитного комплекса
 
 
@@ -219,7 +238,3 @@ block content
 			a.catalog-sections__item.catalog-sections__item--bg-face(href="#") Лицо
 			a.catalog-sections__item.catalog-sections__item--bg-body(href="#") Тело
 			a.catalog-sections__item.catalog-sections__item--bg-hair(href="#") Волосы
-
-
-block footer
-	include modules/footer.pug

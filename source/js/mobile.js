@@ -4,6 +4,11 @@ $(document).ready(function(){
 		dots: true
 	});
 
+	$('.product__days-slider').slick({
+		arrows: true,
+		dots: false
+	});
+
 	$('.reviews__slider').on('init', function(event, slick) {
 		var customDotsContainer = $('.reviews__custom-dots');
 		var reviewsItemsCount = $('.reviews__slider-item:not(.slick-cloned)').length;
