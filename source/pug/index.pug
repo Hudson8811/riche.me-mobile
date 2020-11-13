@@ -70,10 +70,12 @@ block content
 					.reviews__tabs-body
 						.reviews__tabs-body-item.active#tab-reviews
 							include modules/reviews-slider
-							//-.reviews__contrls
-								button.prev(type="button") prev ..
-								button.next(type="button") next ..
-								.dotsClass
+							.reviews__controls
+								button.reviews__prev(type="button")
+									span.visually-hidden prev
+								.reviews__custom-dots
+								button.reviews__next(type="button")
+									span.visually-hidden next
 						.reviews__tabs-body-item#tab-question
 							| Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ex rerum quia culpa quo a nulla saepe quod perspiciatis et ea, deleniti optio architecto accusamus ab ad totam repellat dignissimos.
 
@@ -143,11 +145,65 @@ block content
 						| 935 ₽
 						span.old 1 190 ₽
 					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/recommend-1.jpg", srcset="img/product/recommend-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/recommend-1.jpg", srcset="img/product/recommend-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/recommend-1.jpg", srcset="img/product/recommend-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
 
 	section.products-section
 		.products-section__inner
 			h2.products-section__heading.products-section__heading--icon-star Вы смотрели
 			ul.products-section__list
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/viewed-1.jpg", srcset="img/product/viewed-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/viewed-1.jpg", srcset="img/product/viewed-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
+				li.products-section__item.product-preview
+					a.product-preview__image(href="#")
+						img(src="img/product/viewed-1.jpg", srcset="img/product/viewed-1@2x.jpg 2x", alt="")
+					.product-preview__heading
+						a(href="#") Кофейный скраб для тела CHOCOLATE + COCOA BUTTER
+					.product-preview__price
+						| 935 ₽
+						span.old 1 190 ₽
+					a.product-preview__item-btn.btn.btn--outline-with-icon(href="#") Добавить
 				li.products-section__item.product-preview
 					a.product-preview__image(href="#")
 						img(src="img/product/viewed-1.jpg", srcset="img/product/viewed-1@2x.jpg 2x", alt="")

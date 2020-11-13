@@ -83,6 +83,58 @@
 		}
 	}
 
+	&__controls {
+		display: flex;
+		justify-content: center;
+		margin-top: 24px;
+	}
+
+	&__prev,
+	&__next {
+		width: 14px;
+		height: 14px;
+		border: none;
+		background-color: transparent;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.667 12.6L7 7 1.667 1.4' stroke='%23000' stroke-width='2'/%3e%3c/svg%3e");
+
+		align-self: center;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	&__prev {
+		transform: scale(-1, 1);
+	}
+
+	&__custom-dots {
+		display: flex;
+	}
+
+	&__dot {
+		padding: 0 8px;
+
+		@include text(16px, 1.25, #909090);
+		border: none;
+		background-color: transparent;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			border: none;
+		}
+
+		&.active {
+			color: #4c9935;
+			font-weight: 700;
+		}
+	}
+
 	.slick-dots {
 		@include list-reset;
 		display: flex;
