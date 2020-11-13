@@ -9,9 +9,6 @@ html.no-js(lang="ru")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1")
     +fonts(FONTS)
-			<link rel="preload" href="https://riche.me/local/templates/riche/proximanova/proximanova-bold.woff2" as="font" crossorigin="anonymous">
-			<link rel="preload" href="https://riche.me/local/templates/riche/proximanova/proximanova-light.woff2" as="font" crossorigin="anonymous">
-			<link rel="preload" href="https://riche.me/local/templates/riche/proximanova/proximanova-light-italic.woff2" as="font" crossorigin="anonymous">
     link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
 
     link(rel="stylesheet", href="css/mobile.min.css")
@@ -27,7 +24,7 @@ html.no-js(lang="ru")
     include ../modules/header.pug
     main
       block content
-		include ../modules/footer.pug
+    block footer
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
     script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
     script(src="js/inline.js")
