@@ -1475,7 +1475,9 @@ img {
     background-color: transparent; }
     .accordion__item-btn:hover, .accordion__item-btn:focus {
       outline: none;
-      background-color: #fff; }
+      background-color: #fff;
+      border-left: 0 !important;
+      border-right: 0 !important; }
     .accordion__item-btn::before {
       content: "";
       position: absolute;
